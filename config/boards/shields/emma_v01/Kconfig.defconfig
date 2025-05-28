@@ -1,0 +1,6 @@
+if SHIELD_EMMA_V01
+
+config ZMK_KEYBOARD_NAME
+    default "emma_v01"
+
+endif
