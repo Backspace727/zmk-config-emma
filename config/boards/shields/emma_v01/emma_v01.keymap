@@ -19,8 +19,6 @@
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B
                         &kp LALT &kp LGUI &kp SPACE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         }
     }
