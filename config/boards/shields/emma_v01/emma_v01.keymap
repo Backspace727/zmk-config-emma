@@ -1,24 +1,24 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-//#include <dt-bindings/zmk/bt.h>
-/{
-    keymap {
-        compatible = "zmk,keymap";
+#include <dt-bindings/zmk/bt.h>
 
-        default_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |
-// |  CTRL |  A  |  S  |  D   |  F   |  G   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |
-//                     | ALT  | WIN  | SPACE|
-            bindings = <
-                &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5
-                &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T
-                &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G
-                &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B
-                &kp LALT &kp LWIN &kp SPACE
-            >;
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                    
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B
+                  &kp LGUI &kb LCTRL &kp SPACE
+                        >;
+                };
         };
-        };
-    };
+};
