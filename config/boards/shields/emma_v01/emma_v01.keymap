@@ -15,7 +15,7 @@
                         bindings = <
    &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                    
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T
-   &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B
                   &mo 1 &kp LCTRL &kp SPACE
                         >;
@@ -25,8 +25,8 @@
    &none   &none   &none   &none   &bt BT_CLR_ALL   &bt BT_CLR
    &none   &none   &none   &none   &none   &bootloader
    &none   &none   &none   &none   &none   &none
-   &none   &none   &none   &none   &none   &bt BT_SEL 4
-                   &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2
+   &none   &none   &none   &none   &none   &bt BT_SEL 3
+                   &none   &bt BT_SEL 0  &bt BT_SEL 1
                         >;
                 };
         };
